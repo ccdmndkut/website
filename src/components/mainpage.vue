@@ -2,19 +2,19 @@
   <div>
     <form>
       <md-card id="card">
-        <md-card-header>
+        <md-card-header class="blue">
           <div class="md-title">Contact Us</div>
-          <md-field class="input half left">
-            <label>First Name</label>
-            <md-input></md-input>
-            <span class="md-helper-text">Name</span>
-          </md-field>
-          <md-field class="input half right">
-            <label>First Name</label>
-            <md-input></md-input>
-            <span class="md-helper-text">Name</span>
-          </md-field>
         </md-card-header>
+        <md-field class="input half left">
+          <label>First Name</label>
+          <md-input class="inp"></md-input>
+          <span class="md-helper-text">Name</span>
+        </md-field>
+        <md-field class="input half right">
+          <label>First Name</label>
+          <md-input class="inp"></md-input>
+          <span class="md-helper-text">Name</span>
+        </md-field>
       </md-card>
     </form>
   </div>
@@ -33,6 +33,13 @@ export default {
   width: 50vw;
   max-width: 600px;
   margin: 10vh auto;
+}
+.inp {
+  width: 100%;
+}
+.blue {
+  background-color: blue;
+  color: white;
 }
 .input.half {
   width: 40%;
