@@ -43,11 +43,7 @@ input:hover {
   background-color: #e7e9ec;
 }
 
-input:focus,
-textarea:focus,
-keygen:focus,
-select:focus {
-  all: unset;
+input:focus {
   height: 30px;
   width: 30vw;
   background-color: white;
