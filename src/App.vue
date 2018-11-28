@@ -1,28 +1,26 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <mainpage></mainpage>
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import mainpage from "./components/mainpage.vue";
 
 export default {
+  metaInfo: {
+    title: "Vet2Vet",
+    meta: [
+      { "http-equiv": "Content-Type", content: "text/html; charset=utf-8" },
+      { name: "viewport", content: "width=device-width, initial-scale=1" }
+    ]
+  },
   name: "app",
   components: {
-    HelloWorld
+    mainpage
   }
 };
 </script>
 
-<style lang="scss">
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style>
 </style>
