@@ -1,22 +1,7 @@
 <template>
-  <div>
-    <form>
-      <md-card id="card">
-        <md-card-header class="blue">
-          <div class="md-title">Contact Us</div>
-        </md-card-header>
-        <md-field class="input half left">
-          <label>First Name</label>
-          <md-input class="inp"></md-input>
-          <span class="md-helper-text">Name</span>
-        </md-field>
-        <md-field class="input half right">
-          <label>First Name</label>
-          <md-input class="inp"></md-input>
-          <span class="md-helper-text">Name</span>
-        </md-field>
-      </md-card>
-    </form>
+  <div class="card">
+    <div class="cardtitle">title</div>
+    <div class="cardbody">body</div>
   </div>
 </template>
 
@@ -28,29 +13,36 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style>
-#card {
+<style scoped>
+.card {
+  display: grid;
+  grid-template-rows: 10vh 40vh;
   width: 50vw;
-  max-width: 600px;
-  margin: 10vh auto;
+  height: 50vh;
+  color: black;
+  background-color: white;
+  margin: auto;
+  text-align: center;
+  font-size: 30px;
+box-shadow: 0 3px 4px 0 rgba(0,0,0,0.14), 0 3px 3px -2px rgba(0,0,0,0.12), 0 1px 8px 0 rgba(0,0,0,0.20);
+transition: box-shadow 300ms;
 }
-.inp {
-  width: 100%;
+.card:hover {
+box-shadow: 0 6px 10px 0 rgba(0,0,0,0.14), 0 1px 18px 0 rgba(0,0,0,0.12), 0 3px 5px -1px rgba(0,0,0,0.20);
+
 }
-.blue {
-  background-color: blue;
-  color: white;
+.cardtitle {
+  background-color: #d8883a;
+  grid-row: 1;
+  height: 100%;
+line-height: 10vh;
 }
-.input.half {
-  width: 40%;
-  display: inline-block;
-}
-.input.half.right {
-  margin-left: 5%;
-  margin-right: 5%;
-}
-.input.half.left {
-  margin-right: 5%;
-  margin-left: 5%;
+ .cardbody {
+  grid-row: 2;
+  background-color: #edc8a4;
+  height: 100%;
+text-align: start;
+padding-left: 20px;
 }
 </style>
+

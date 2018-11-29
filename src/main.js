@@ -4,12 +4,9 @@ import "./registerServiceWorker";
 
 import Meta from "vue-meta";
 
-import VueMaterial from "vue-material";
-import "vue-material/dist/vue-material.min.css";
-import "vue-material/dist/theme/default.css";
+
 
 Vue.use(Meta);
-Vue.use(VueMaterial);
 
 Vue.config.productionTip = false;
 
