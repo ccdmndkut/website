@@ -51,7 +51,7 @@ body {
   margin-bottom: -30px;
 }
 #pic {
-  background-image: url(~/assets/eagle.jpg);
+  background-image: url(~/assets/eagle1.jpg);
   background-size: 170vh;
   background-position: top;
   background-repeat: no-repeat;
