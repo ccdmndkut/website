@@ -30,7 +30,6 @@ export default {
 <style>
 #app {
   height: 100vh;
-  padding: 25vh 0px;
 }
 .bg {
   background-color: #f0f0df;

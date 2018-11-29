@@ -1,6 +1,8 @@
 <template>
 <div class="cont">
-    inputComponent
+    <input type="text">
+    <input type="text">
+    <input type="text">
   </div>
 </template>
 
@@ -18,6 +20,8 @@ export default {
 }
 input {
   all: unset;
+  display: block;
+  margin: 25px;
   background-color: #f1f3f4;
   height: 30px;
   width: 30vw;
