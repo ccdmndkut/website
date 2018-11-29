@@ -1,7 +1,7 @@
 <template>
   <div id='app'>
     <div id='top'>Coming Soon</div>
-    <div id='pic'></div>
+    <div id='pic' :style="{'background-image': 'url(' + require('./assets/eagle1.jpg') + ')'}"></div>
     <div id='bottt'>denvercombs@vaclaims.net
       <br>chriscombs@vaclaims.net
     </div>
@@ -11,7 +11,7 @@
 
 <script>
 import mainpage from "./components/mainpage.vue";
-// import eagle from "./assets/eagle1.jpg";
+
 export default {
   metaInfo: {
     title: "Vet2Vet",
@@ -51,7 +51,6 @@ body {
   margin-bottom: -30px;
 }
 #pic {
-  background-image: url(~/assets/eagle1.jpg);
   background-size: 170vh;
   background-position: top;
   background-repeat: no-repeat;
