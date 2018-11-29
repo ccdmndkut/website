@@ -1,12 +1,17 @@
 <template>
   <div id='app'>
-    <input type='text'>
+    <div id='top'>Coming Soon</div>
+    <div id='pic'></div>
+    <div id='bottt'>denvercombs@vaclaims.net
+      <br>chriscombs@vaclaims.net
+    </div>
+    <!-- <input type='text'> -->
   </div>
 </template>
 
 <script>
 import mainpage from "./components/mainpage.vue";
-
+// import eagle from "./assets/eagle1.jpg";
 export default {
   metaInfo: {
     title: "Vet2Vet",
@@ -24,10 +29,43 @@ export default {
 
 <style>
 body {
-  background-color: #ffffff;
-  padding: 25px;
+  color: #999;
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-font-feature-settings: "liga" on;
+  max-width: 100vw;
+  background-color: #000000;
+  max-height: 100vh;
+  overflow: hidden;
 }
-input {
+#top {
+  font-size: 500%;
+  text-align: center;
+  padding-top: 25px;
+  margin-bottom: -30px;
+}
+#pic {
+  background-image: url(~/assets/eagle.jpg);
+  background-size: 170vh;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-position-y: -5vh;
+  height: 100%;
+}
+#bottt {
+  position: fixed;
+  font-size: 3vh;
+  text-align: center;
+  bottom: 10px;
+  width: 100%;
+}
+/* input {
   all: unset;
   background-color: #f1f3f4;
   height: 30px;
@@ -55,5 +93,5 @@ input:focus {
   box-sizing: border-box;
   outline: 0;
   transition: 0s;
-}
+} */
 </style>
